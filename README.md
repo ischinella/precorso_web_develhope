@@ -1,2 +1,3 @@
-# precorso_web
-Esercizi Pre Corso Web 
+PreCorso Web
+Develhope
+Esercizi HTML & CSS
