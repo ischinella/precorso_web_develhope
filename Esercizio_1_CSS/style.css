@@ -1,0 +1,16 @@
+:root {
+    --bg-color-body: #001111;
+    --raggio-cerchio: 300px;
+    --bg-color-cerchio: #ff8800;
+    }    
+
+body {
+    background-color: var(--bg-color-body, #011212);
+}
+
+.ball {
+    width: var(--raggio-cerchio, 100px);
+    height: var(--raggio-cerchio, 100px);
+    background-color: var(--bg-color-cerchio, white);
+    border-radius: calc(var(--raggio-cerchio) / 2);
+}
