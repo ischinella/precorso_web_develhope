@@ -1,0 +1,46 @@
+body {
+	font-family: monospace;
+}
+
+/* Hide the toggle checkbox */
+#expand-toggle {
+	display: none;
+}
+
+/* Inserisce la label di default del chechbox quando non è selezionato */
+#expand-btn::before {
+	content: "Mostra righe";
+}
+
+/* Hide expandable content by default */
+.expandable {
+	visibility: collapse;
+	background: gray;
+	color: white;
+}
+
+/* Style the button */
+#expand-btn {
+	display: inline-block;
+	margin-top: 12px;
+	padding: 6px 12px;
+	background-color: #ff8888;
+	border: 1px solid;
+	border-radius: 3px;
+	transition: 0.3s;
+} 
+
+/* Show hidden content when the checkbox is checked */
+#expand-toggle:checked ~ * .expandable {
+	visibility: visible;
+}
+
+/* Style the button when the checkbox is checked */
+#expand-toggle:checked ~ #expand-btn {
+	background-color: #88ff88;
+}
+
+/* Modifica la label del chechbox quando è selezionato */
+#expand-toggle:checked ~ #expand-btn::before {
+	content: "Nascondi righe";
+}
