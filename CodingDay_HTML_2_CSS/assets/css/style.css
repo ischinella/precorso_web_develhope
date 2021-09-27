@@ -1,0 +1,187 @@
+* {
+  box-sizing: border-box;
+}
+
+.logo {
+   grid-area: logo;
+   align-self: center;
+   margin: 20px;
+   
+}
+
+/* Make all link text black with no text decoration */
+a {
+  color: black;
+  text-decoration: none;
+}
+
+.testata { 
+  grid-area: testata;
+  /* margin: 10px; */
+  /* align-self: center; */
+}
+
+.navbar-orizz { 
+  grid-area: navbar-orizz;
+  background-color: lightgray;
+  padding: 10px;
+  font-size: 18px;
+  font-weight: 300;
+  /* margin: 10px 0; */
+  line-height: 1.2;
+ 
+} 
+
+.navbar-vert { 
+  grid-area: navbar-vert; 
+  background-color:darkgray;
+  width: 150px;
+  /* padding-right: 20px; */
+  font-size: 16px;
+  /* font-weight:200; */
+}
+
+.titolo { 
+  grid-area: titolo; 
+  background-color: hsla(0, 0%, 96%, 0.856);
+  
+}
+
+.foto { 
+  grid-area: foto;
+  background-color: hsla(0, 0%, 96%, 0.856);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.foto > img{ 
+  grid-area: foto;
+  margin-left: 30px;
+  width: 150px;
+  
+}
+
+.articolo {
+   grid-area: articolo; 
+   background-color: hsla(0, 0%, 96%, 0.856);
+   padding: 20px;
+   font-weight: 100;
+}
+
+.form {
+   grid-area: form;
+   background-color: hsla(0, 0%, 96%, 0.856);
+
+ }
+
+.footer { 
+  grid-area: footer;
+  margin-left: 40px;
+  line-height: 50%;
+}
+
+.footer > p { 
+  grid-area: footer;
+  font-size: 16px;
+  
+}
+
+body {
+  font-family: Arial;
+  padding: 10px;
+  background: #f1f1f1;
+}
+
+
+/* Change color on hover */
+.navbar-orizz a:hover {
+  background-color:dimgray;
+  color:ghostwhite;
+}
+
+.navbar-vert a:hover {
+  background-color:dimgray;
+  color:ghostwhite;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+  'logo testata testata'
+  'navbar-orizz navbar-orizz navbar-orizz'
+  'navbar-vert titolo titolo'
+  'navbar-vert foto articolo'
+  'navbar-vert form form'
+  'footer footer footer';
+  background-color: grey;
+  
+  /* grid-gap: 0px;
+  padding: 0px;  */
+}
+
+h2 {
+  margin-left: 30px;
+}
+
+h3 {
+  margin-left: 30px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  /* margin: 0 -16px; */
+}
+
+.col-50 {
+  flex: 50%;
+}
+
+.col-100 {
+  flex: 100%;
+}
+
+.col-50,
+.col-100 {
+  padding: 0 16px;
+}
+
+.container {
+  /* background-color: #f2f2f2; */
+  /* padding: 5px 20px 15px 20px; */
+  border: 1px solid lightgrey;
+  
+}
+
+input, textarea {
+  background-color:lightgray;
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: none;
+  /* border-radius: 3px; */
+}
+
+
+label {
+  margin-bottom: 10px;
+  display: block;
+}
+
+.btn {
+  background-color: darkgray;
+  float: right;
+  /* color: white; */
+  /* padding: 12px; */
+  margin-right: 20px;
+  border: none;
+  width: 25%;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.btn:hover {
+  background-color:lightgrey;
+}
